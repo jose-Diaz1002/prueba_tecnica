@@ -35,7 +35,7 @@ Cada tipo de robot tiene **atributos específicos:**
 
 | Tipo de robot | Atributos específicos |
 | --- | --- |
-| **Terrestre** | Velocidad máxima (km/h), tipo de tracción (ORUGAS, RUEDAS) |
+| **competition.models.GroundRobot** | Velocidad máxima (km/h), tipo de tracción (ORUGAS, RUEDAS) |
 | **Acuático** | Profundidad máxima (m), sistema de propulsión (HÉLICE, CHORRO) |
 | **Aéreo** | Altitud máxima (m), autonomía de vuelo (minutos) |
 
@@ -47,15 +47,15 @@ Cada robot debe tener un método `getTechnicalDescription()` que **devuelva** un
 
 Ejemplos:
 
-- 🤖 **Robot Terrestre**
+- 🤖 **competition.models.Robot competition.models.GroundRobot**
 
   “TankBot, fabricado por RoboCorp en 2022, usa tracción ORUGAS y alcanza hasta 40 km/h.”
 
-- 🌊 **Robot Acuático**
+- 🌊 **competition.models.Robot Acuático**
 
   “AquaRunner alcanza una profundidad de 500 m con propulsión tipo HÉLICE. Fabricado por AquaTech en 2021.”
 
-- ✈️ **Robot Aéreo**
+- ✈️ **competition.models.Robot Aéreo**
 
   “SkyDancer vuela hasta 3000 m durante 90 minutos. Fabricado en 2023 por AeroDynamics.”
 
@@ -83,7 +83,7 @@ Para poder participar, un robot debe cumplir uno de los siguientes criterios:
 
 | Tipo de robot | Requisito de participación |
 | --- | --- |
-| Terrestre | Tener tracción `ORUGAS` |
+| competition.models.GroundRobot | Tener tracción `ORUGAS` |
 | Aéreo | Tener una autonomía de vuelo de **al menos 60 minutos** |
 
 > **RECUERDA**: Solo los robots terrestres y aéreos deben poder ser evaluados para participar en esta competición.
