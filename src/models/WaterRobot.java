@@ -17,11 +17,7 @@ public class WaterRobot extends Robot {
 
     @Override
     public String getTechnicalDescription() {
-        return getName() + " alcanza una profundidad de "+ maximumDepth  + " metros con propulsion tipo " + propulsionSystem + " fabricado en " + getManufacturer() + " en el año "+ getYearManufacture();
+        return getName() + ", alcanza una profundidad de " + maximumDepth + " metros, con propulsion tipo " + propulsionSystem + ", fabricado en " + getManufacturer() + " en el año " + getYearManufacture() + ".";
 
     }
-
-
-
-
 }
