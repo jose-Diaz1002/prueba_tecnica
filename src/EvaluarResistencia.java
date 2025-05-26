@@ -1,4 +1,4 @@
 public interface EvaluarResistencia {
-    Boolean puedeParticiparCompeticion();
+    String getResistencia();
 
 }

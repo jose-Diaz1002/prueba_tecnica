@@ -28,4 +28,7 @@ public abstract class Robot {
     public int getFechaRegistroCompeticion() {
         return fechaRegistroCompeticion;
     }
+
+    enum TipoTraccion { ORUGAS, RUEDAS }
+    enum SistemaPropulsion { HELICE, CHORRO }
 }

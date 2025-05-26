@@ -1,12 +1,20 @@
 public class Aereo extends Robot implements EvaluarResistencia{
 
    private String altitudMaxima;
-   private String autonomiaVuelo;
+   private int autonomiaVuelo;
 
-   public Aereo(String nombre, String fabricante, int añoFabricacion, int fechaRegistroCompeticion, String altitudMaxima, String autonomiaVuelo) {
+   public Aereo(String nombre, String fabricante, int añoFabricacion, int fechaRegistroCompeticion, String altitudMaxima, int autonomiaVuelo) {
       super(nombre, fabricante, añoFabricacion, fechaRegistroCompeticion);
       this.altitudMaxima = altitudMaxima;
       this.autonomiaVuelo = autonomiaVuelo;
+   }
+
+   public String getAltitudMaxima() {
+      return altitudMaxima;
+   }
+
+   public int getAutonomiaVuelo() {
+      return autonomiaVuelo;
    }
 
    @Override
@@ -16,7 +24,12 @@ public class Aereo extends Robot implements EvaluarResistencia{
 
 
    @Override
-   public Boolean puedeParticiparCompeticion() {
-      return null;
+   public String getResistencia() {
+      if (autonomiaVuelo >= 60){
+         return "Apto";
+      }else{
+         return "No apto";
+      }
+
    }
 }

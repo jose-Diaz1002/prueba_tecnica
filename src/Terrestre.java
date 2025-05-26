@@ -1,14 +1,18 @@
 public class Terrestre extends Robot implements EvaluarResistencia {
-   private int velocidadMaxima;
-   private String tipoTraccion;
+   private double velocidadMaxima;
+   private TipoTraccion tipoTraccion;
 
-   public Terrestre(String nombre, String fabricante, int añoFabricacion, int fechaRegistroCompeticion, int velocidadMaxima, String tipoTraccion) {
+   public Terrestre(String nombre, String fabricante, int añoFabricacion, int fechaRegistroCompeticion, int velocidadMaxima, TipoTraccion tipoTraccion) {
       super(nombre, fabricante, añoFabricacion, fechaRegistroCompeticion);
       this.velocidadMaxima = velocidadMaxima;
       this.tipoTraccion = tipoTraccion;
    }
 
-   public String getTipoTraccion() {
+   public double getVelocidadMaxima() {
+      return velocidadMaxima;
+   }
+
+   public TipoTraccion getTipoTraccion() {
       return tipoTraccion;
    }
 
@@ -19,7 +23,14 @@ public class Terrestre extends Robot implements EvaluarResistencia {
 
 
    @Override
-   public Boolean puedeParticiparCompeticion() {
-      return null;
+   public String getResistencia() {
+      boolean apto = tipoTraccion == TipoTraccion.ORUGAS;
+      if(tipoTraccion.equals(tipoTraccion.ORUGAS)){
+         return "Apto";
+
+      }else {
+         return "No apto";
+      }
+
    }
 }
