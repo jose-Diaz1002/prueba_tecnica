@@ -1,4 +1,4 @@
-package models;
+package competition.models;
 
 import java.time.LocalDate;
 

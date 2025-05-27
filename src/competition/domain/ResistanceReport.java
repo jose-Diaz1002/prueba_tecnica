@@ -1,4 +1,4 @@
-package domain;
+package competition.domain;
 
 import java.util.List;
 

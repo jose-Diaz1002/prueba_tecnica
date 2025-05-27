@@ -1,6 +1,8 @@
-package models;
+package competition.models;
 
-import domain.EvaluateResistance;
+
+
+import competition.domain.EvaluateResistance;
 
 import java.time.LocalDate;
 

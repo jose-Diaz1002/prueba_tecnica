@@ -1,10 +1,14 @@
-import domain.ResistanceReport;
-import models.AirRobot;
-import models.GroundRobot;
-import models.WaterRobot;
-import models.enums.PropulsionSystem;
-import models.enums.TractionType;
-import service.RobotRegistry;
+package competition;
+
+
+
+import competition.domain.ResistanceReport;
+import competition.models.AirRobot;
+import competition.models.GroundRobot;
+import competition.models.WaterRobot;
+import competition.models.enums.PropulsionSystem;
+import competition.models.enums.TractionType;
+import competition.service.RobotRegistry;
 
 import java.time.LocalDate;
 

@@ -1,7 +1,9 @@
-package models;
+package competition.models;
 
-import domain.EvaluateResistance;
-import models.enums.TractionType;
+
+
+import competition.domain.EvaluateResistance;
+import competition.models.enums.TractionType;
 
 import java.time.LocalDate;
 

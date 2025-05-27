@@ -1,8 +1,10 @@
-package service;
+package competition.service;
 
-import domain.EvaluateResistance;
-import models.GroundRobot;
-import models.Robot;
+
+
+import competition.domain.EvaluateResistance;
+import competition.models.GroundRobot;
+import competition.models.Robot;
 
 import java.util.ArrayList;
 import java.util.List;

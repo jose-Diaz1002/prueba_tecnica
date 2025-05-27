@@ -1,6 +1,8 @@
-package models;
+package competition.models;
 
-import models.enums.PropulsionSystem;
+
+import competition.models.Robot;
+import competition.models.enums.PropulsionSystem;
 
 import java.time.LocalDate;
 
