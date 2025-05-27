@@ -1,7 +1,5 @@
 package competition;
 
-
-
 import competition.domain.ResistanceReport;
 import competition.models.AirRobot;
 import competition.models.GroundRobot;

@@ -1,7 +1,5 @@
 package competition.models;
 
-
-
 import competition.domain.EvaluateResistance;
 
 import java.time.LocalDate;

@@ -1,7 +1,6 @@
 package competition.models;
 
 
-import competition.models.Robot;
 import competition.models.enums.PropulsionSystem;
 
 import java.time.LocalDate;

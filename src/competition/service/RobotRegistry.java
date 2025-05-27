@@ -1,7 +1,5 @@
 package competition.service;
 
-
-
 import competition.domain.EvaluateResistance;
 import competition.models.GroundRobot;
 import competition.models.Robot;

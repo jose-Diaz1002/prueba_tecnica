@@ -1,7 +1,6 @@
 package competition.models;
 
 
-
 import competition.domain.EvaluateResistance;
 import competition.models.enums.TractionType;
 
